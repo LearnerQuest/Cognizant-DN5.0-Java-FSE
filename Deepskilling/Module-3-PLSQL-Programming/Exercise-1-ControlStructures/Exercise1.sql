@@ -32,7 +32,7 @@ END;
 -- Mark customers as VIP if balance > 10000
 --------------------------------------------------
 
-ALTER TABLE Customers ADD IsVIP VARCHAR2(5);
+--ALTER TABLE Customers ADD IsVIP VARCHAR2(5);
 
 BEGIN
     FOR cust IN (
@@ -81,3 +81,6 @@ BEGIN
     END LOOP;
 END;
 /
+SELECT * FROM Customers;
+SELECT * FROM Loans;
+SET SERVEROUTPUT ON;
