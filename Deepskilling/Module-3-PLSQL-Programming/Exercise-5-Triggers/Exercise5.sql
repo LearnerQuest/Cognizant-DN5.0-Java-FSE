@@ -1,0 +1,27 @@
+SET SERVEROUTPUT ON;
+
+PROMPT ===== BEFORE ACCOUNTS =====
+SELECT * FROM Accounts;
+
+PROMPT ===== BEFORE CUSTOMERS =====
+SELECT * FROM Customers;
+
+PROMPT ===== BEFORE EMPLOYEES =====
+SELECT * FROM Employees;
+
+CREATE OR REPLACE TRIGGER trg_customer_update
+BEFORE UPDATE ON Customers
+FOR EACH ROW
+BEGIN
+    :NEW.LastModified := SYSDATE;
+END;
+/
+
+PROMPT ===== AFTER ACCOUNTS =====
+SELECT * FROM Accounts;
+
+PROMPT ===== AFTER CUSTOMERS =====
+SELECT * FROM Customers;
+
+PROMPT ===== AFTER EMPLOYEES =====
+SELECT * FROM Employees;

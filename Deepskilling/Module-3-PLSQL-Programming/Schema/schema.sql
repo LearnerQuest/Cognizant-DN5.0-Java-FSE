@@ -45,3 +45,12 @@ CREATE TABLE Employees (
     Department VARCHAR2(50),
     HireDate DATE
 );
+
+PROMPT ===== AFTER ACCOUNTS =====
+SELECT * FROM Accounts;
+
+PROMPT ===== AFTER CUSTOMERS =====
+SELECT * FROM Customers;
+
+PROMPT ===== AFTER EMPLOYEES =====
+SELECT * FROM Employees;
