@@ -1,0 +1,16 @@
+package com.cognizant.module4.basic;
+
+public class MyService {
+
+    private ExternalApi externalApi;
+
+    public MyService(ExternalApi externalApi) {
+        this.externalApi = externalApi;
+    }
+
+    public void process() {
+        externalApi.connect();
+        externalApi.getData();
+        externalApi.disconnect();
+    }
+}

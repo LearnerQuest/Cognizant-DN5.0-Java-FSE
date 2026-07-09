@@ -1,0 +1,3 @@
+com\cognizant\springtest\entity\Employee.class
+com\cognizant\springtest\repository\EmployeeRepository.class
+com\cognizant\springtest\service\EmployeeService.class
