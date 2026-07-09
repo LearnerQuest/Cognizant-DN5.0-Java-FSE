@@ -1,0 +1,279 @@
+PS C:\Users\aashi\Downloads\Cognizant-Java-FSE\Deepskilling\GitDemo> git --version
+>> git config --global user.name "Aashi Garg"
+>> git config --global user.email "aashigarg825@gmail.com"
+>> git config --global --list
+>> 
+>> cd C:\Users\aashi\Downloads\Cognizant-Java-FSE\Deepskilling
+>> mkdir GitDemo
+>> cd GitDemo
+>> git init
+>> 
+>> echo "Welcome to the version control" > welcome.txt
+>> git status
+>> git add welcome.txt
+>> git commit -m "Initial commit"
+>> 
+>> git remote add origin https://github.com/LearnerQuest/GitDemo.git
+>> git branch -M main
+>> git pull origin main --allow-unrelated-histories
+>> git push -u origin main
+git version 2.53.0.windows.1
+core.editor="C:\Users\aashi\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+user.name=Aashi Garg
+user.email=aashigarg825@gmail.com
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+mkdir : An item with the specified name C:\Users\aashi\Downloads
+\Cognizant-Java-FSE\Deepskilling\GitDemo already exists.
+At line:7 char:1
++ mkdir GitDemo
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\aashi\. 
+   ..killing\GitDemo:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShe 
+   ll.Commands.NewItemCommand
+ 
+Reinitialized existing Git repository in C:/Users/aashi/Downloads/Cognizant-Java-FSE/Deepskilling/GitDemo/.git/
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+On branch main
+Your branch is ahead of 'origin/main' by 5 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+error: remote origin already exists.
+From https://github.com/LearnerQuest/GitDemo
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 1.38 KiB | 472.00 KiB/s, done.
+Total 15 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), done.
+To https://github.com/LearnerQuest/GitDemo.git
+   5b7d36e..c538bcd  main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\aashi\Downloads\Cognizant-Java-FSE\Deepskilling\GitDemo> git checkout -b GitNewBranch
+>> git branch -a
+>> 
+>> echo "This file is created in GitNewBranch" > branchfile.txt
+>> git add branchfile.txt
+>> git commit -m "Added branch file in GitNewBranch"
+>> 
+>> git checkout main
+>> git diff main GitNewBranch
+>> git merge GitNewBranch
+>> 
+>> git log --oneline --graph --decorate
+>> git branch -d GitNewBranch
+>> git status
+Switched to a new branch 'GitNewBranch'
+* GitNewBranch
+  main
+  remotes/origin/main
+On branch GitNewBranch
+nothing to commit, working tree clean
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Already up to date.
+* c538bcd (HEAD -> main, origin/main, GitNewBranch) Added backup files to gitignore
+*   46ef263 Resolved merge conflict in hello.xml
+|\  
+| * bf92fb8 Added hello.xml in GitWork
+* | e4362c9 Added hello.xml in main
+|/  
+* aa801c4 Added branch file in GitNewBranch
+*   5b7d36e Merge branch 'main' of https://github.com/LearnerQuest/GitDemo
+|\  
+| * 74bd452 Create .gitignore
+| * 668817b Create README.md
+* 41be7e9 Initial commit
+Deleted branch GitNewBranch (was c538bcd).
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\aashi\Downloads\Cognizant-Java-FSE\Deepskilling\GitDemo> git checkout -b GitWork
+>> echo "<message>Hello from GitWork branch</message>" > hello.xml
+>> git add hello.xml
+>> git commit -m "Added hello.xml in GitWork"
+>> 
+>> git checkout main
+>> echo "<message>Hello from main branch</message>" > hello.xml
+>> git add hello.xml
+>> git commit -m "Added hello.xml in main"
+>> 
+>> git log --oneline --graph --decorate --all
+>> git diff main GitWork
+>> git merge GitWork
+Switched to a new branch 'GitWork'
+[GitWork 27bef5c] Added hello.xml in GitWork
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+[main cdcd2f2] Added hello.xml in main
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+* 27bef5c (GitWork) Added hello.xml in GitWork
+| * cdcd2f2 (HEAD -> main) Added hello.xml in main
+|/  
+* c538bcd (origin/main) Added backup files to gitignore
+*   46ef263 Resolved merge conflict in hello.xml
+|\  
+| * bf92fb8 Added hello.xml in GitWork
+* | e4362c9 Added hello.xml in main
+|/  
+* aa801c4 Added branch file in GitNewBranch
+*   5b7d36e Merge branch 'main' of https://github.com/LearnerQuest/GitDemo
+|\  
+| * 74bd452 Create .gitignore
+| * 668817b Create README.md
+* 41git add hello.xmlmit
+>> git commit -m "Resolved merge conflict in hello.xml"
+>> ex 8e25fa8..74fe4d1 100644
+>> echo "*.orig" >> .gitignore/hello.xml differ
+>> git add .gitignore binary files: hello.xml (HEAD vs. GitWork)
+>> git commit -m "Added backup files to gitignore"
+>> FLICT (content): Merge conflict in hello.xml
+>> git branchge failed; fix conflicts and then commit the result.
+>> git branch -d GitWorkads\Cognizant-Java-FSE\Deepskilling\GitDe
+>> git log --oneline --graph --decorate
+[main fefd702] Resolved merge conflict in hello.xml
+[main f78cc8c] Added backup files to gitignore
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+  GitWork
+* main
+Deleted branch GitWork (was 27bef5c).
+* f78cc8c (HEAD -> main) Added backup files to gitignore
+*   fefd702 Resolved merge conflict in hello.xml
+|\  
+| * 27bef5c Added hello.xml in GitWork
+* | cdcd2f2 Added hello.xml in main
+|/  
+* c538bcd (origin/main) Added backup files to gitignore
+*   46ef263 Resolved merge conflict in hello.xml
+|\  
+| * bf92fb8 Added hello.xml in GitWork
+* | e4362c9 Added hello.xml in main
+|/  
+* aa801c4 Added branch file in GitNewBranch
+*   5b7d36e Merge branch 'main' of https://github.com/LearnerQuest/GitDemo
+|\  
+| * 74bd452 Create .gitignore
+| * 668817b Create README.md
+* 41be7e9 Initial commit
+PS C:\Users\aashi\Downloads\Cognizant-Java-FSE\Deepskilling\GitDemo> git status
+>> git branch -a
+>> git pull origin main
+>> git push origin main
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+* main
+  remotes/origin/main
+From https://github.com/LearnerQuest/GitDemo
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 1.08 KiB | 368.00 KiB/s, done.
+Total 12 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), completed with 1 local object.
+To https://github.com/LearnerQuest/GitDemo.git
+   c538bcd..f78cc8c  main -> main
+PS C:\Users\aashi\Downloads\Cognizant-Java-FSE\Deepskilling\GitDemo> echo "Error log" > app.log
+>> mkdir log
+>> echo "test log file" > log/test.txt
+>> 
+>> echo "*.log" >> .gitignore
+>> echo "log/" >> .gitignore
+>> 
+>> git status
+>> git add .gitignore
+>> git commit -m "Updated gitignore for log files"
+>> git push origin main
+>> git status
+
+
+    Directory: C:\Users\aashi\Downloads\Cognizant-Java-FSE\Deeps
+    killing\GitDemo
+
+
+Mode                 LastWriteTime         Length Name          
+----                 -------------         ------ ----          
+d-----        09-07-2026  07:02 PM                log           
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[main c2c826f] Updated gitignore for log files
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/LearnerQuest/GitDemo.git
+   f78cc8c..c2c826f  main -> main
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+    git add README.md
+>> git commit -m "Updated README with Git HOL steps"killing\GitDe
+>> git push origin main
+[main 17aa65b] Updated README with Git HOL steps
+ 1 file changed, 77 insertions(+)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 965 bytes | 965.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/LearnerQuest/GitDemo.git
+   c2c826f..17aa65b  main -> main
+PS C:\Users\aashi\Downloads\Cognizant-Java-FSE\Deepskilling\GitDemo> git status
+>> git log --oneline --graph --decorate
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+* 17aa65b (HEAD -> main, origin/main) Updated README with Git HOL steps
+* c2c826f Updated gitignore for log files
+* f78cc8c Added backup files to gitignore
+*   fefd702 Resolved merge conflict in hello.xml
+|\  
+| * 27bef5c Added hello.xml in GitWork
+* | cdcd2f2 Added hello.xml in main
+|/  
+* c538bcd Added backup files to gitignore
+*   46ef263 Resolved merge conflict in hello.xml
+|\  
+| * bf92fb8 Added hello.xml in GitWork
+* | e4362c9 Added hello.xml in main
+|/  
+* aa801c4 Added branch file in GitNewBranch
+*   5b7d36e Merge branch 'main' of https://github.com/LearnerQuest/GitDemo
+|\  
+| * 74bd452 Create .gitignore
+| * 668817b Create README.md
+* 41be7e9 Initial commit
