@@ -1,0 +1,24 @@
+Exercise-2: Data Binding and Lifecycle Hooks
+
+Topics Covered:
+
+1. Interpolation
+   - Used to display component data in HTML.
+   Example:
+   {{studentName}}
+
+2. Property Binding
+   - Used to bind component properties with HTML elements.
+
+3. Event Binding
+   - Used to handle user events.
+   Example:
+   (click)
+
+4. Two Way Binding
+   - Used with ngModel.
+   Example:
+   [(ngModel)]
+
+5. Lifecycle Hook
+   - ngOnInit() executes when component initializes.

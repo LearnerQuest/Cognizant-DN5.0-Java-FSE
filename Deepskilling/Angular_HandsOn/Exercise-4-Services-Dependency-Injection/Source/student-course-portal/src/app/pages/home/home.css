@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+p {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  border: 1px solid gray;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+}

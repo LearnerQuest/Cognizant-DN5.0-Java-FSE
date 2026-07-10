@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { Home } from './pages/home/home';
 import { CourseList } from './pages/course-list/course-list';
 import { StudentProfile } from './pages/student-profile/student-profile';
+import { StudentDashboard } from './pages/student-dashboard/student-dashboard';
 
 
 export const routes: Routes = [
@@ -22,6 +23,9 @@ export const routes: Routes = [
  component:StudentProfile
 },
 
-
+{
+ path:'dashboard',
+ component:StudentDashboard
+}
 
 ];
