@@ -1,0 +1,3 @@
+com\cognizant\oauth\config\SecurityConfig.class
+com\cognizant\oauth\controller\UserController.class
+com\cognizant\oauth\OAuthClientApplication.class
