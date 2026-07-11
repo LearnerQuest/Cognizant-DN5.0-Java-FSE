@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.column {
+  width: 260px;
+  padding: 20px;
+  border-right: 3px solid green;
+  text-align: left;
+}
+
+.column:last-child {
+  border-right: none;
+}

@@ -1,0 +1,13 @@
+.score-card {
+  width: 350px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.score-card h1 {
+  text-align: center;
+  color: brown;
+}

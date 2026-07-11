@@ -1,0 +1,47 @@
+﻿spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: account
+          uri: lb://account-service
+          predicates: [ Path=/api/accounts/** ]
+          filters:
+            - RewritePath=/api/accounts/(?<s>.*), /accounts/${s}
+        - id: loan
+          uri: lb://loan-service
+          predicates: [ Path=/api/loans/** ]
+          filters:
+            - RewritePath=/api/loans/(?<s>.*), /loans/${s}
+        - id: greet
+          uri: lb://greet-service
+          predicates: [ Path=/api/greet ]
+          filters:
+            - RewritePath=/api/greet, /greet
+        - id: payment
+          uri: lb://payment-service
+          predicates: [ Path=/api/payments/** ]
+          filters:
+            - RewritePath=/api/payments/(?<s>.*), /payments/${s}
+            - name: CircuitBreaker
+              args:
+                name: paymentGatewayCircuitBreaker
+                fallbackUri: forward:/fallback/payment
+server:
+  port: 9090
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway,circuitbreakers

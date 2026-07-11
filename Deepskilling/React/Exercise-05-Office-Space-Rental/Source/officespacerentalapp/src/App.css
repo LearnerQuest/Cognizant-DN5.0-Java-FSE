@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  padding: 25px;
+}
+
+.office-card {
+  width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  text-align: left;
+}
