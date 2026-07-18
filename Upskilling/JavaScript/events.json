@@ -1,0 +1,34 @@
+[
+    {
+        "id": 101,
+        "title": "Cloud Computing Conference",
+        "category": "Technology",
+        "date": "2026-07-21",
+        "location": "Bengaluru",
+        "seats": 35
+    },
+    {
+        "id": 102,
+        "title": "Summer Music Carnival",
+        "category": "Music",
+        "date": "2026-07-23",
+        "location": "Delhi",
+        "seats": 40
+    },
+    {
+        "id": 103,
+        "title": "JavaScript Development Workshop",
+        "category": "Workshop",
+        "date": "2026-07-26",
+        "location": "Noida",
+        "seats": 30
+    },
+    {
+        "id": 104,
+        "title": "Machine Learning Meetup",
+        "category": "Technology",
+        "date": "2026-07-29",
+        "location": "Pune",
+        "seats": 25
+    }
+]

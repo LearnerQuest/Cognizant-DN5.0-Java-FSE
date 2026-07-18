@@ -1,0 +1,412 @@
+/* =========================================================
+   CSS3 HANDS-ON
+   Project: Local Community Event Portal
+   ========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL RESET
+   Universal selector used to reset margin and padding
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   2. BODY STYLES
+   Background color, image, font and text color
+   ========================================================= */
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #eef3f8;
+    background-image:
+        linear-gradient(
+            rgba(238, 243, 248, 0.94),
+            rgba(238, 243, 248, 0.94)
+        ),
+        url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #222222;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   3. HEADER STYLES
+   ID selector and gradient background
+   ========================================================= */
+
+#mainHeader {
+    background: linear-gradient(135deg, #0056b3, #00a8e8);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    letter-spacing: 1px;
+}
+
+#mainHeader h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#mainHeader p {
+    margin-top: 10px;
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
+
+/* Inline CSS example:
+   Add this temporarily in index.html if required:
+
+   <h2 style="color: red;">Inline Styled Heading</h2>
+*/
+
+
+/* =========================================================
+   4. NAVIGATION STYLES
+   List styling and pseudo-classes
+   ========================================================= */
+
+nav {
+    background-color: rgba(8, 46, 90, 0.96);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    list-style-position: inside;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav li {
+    padding: 4px 8px;
+}
+
+nav a:link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:visited {
+    color: #d8ecff;
+}
+
+nav a:hover {
+    color: #ffe066;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #ff6b6b;
+}
+
+
+/* =========================================================
+   5. GENERAL SECTION STYLES
+   Element selector
+   ========================================================= */
+
+section {
+    width: 88%;
+    max-width: 1050px;
+    margin: 28px auto;
+    padding: 28px;
+    background-color: rgba(255, 255, 255, 0.97);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Style all h2 elements */
+
+h2 {
+    color: #0056b3;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #00a8e8;
+}
+
+
+/* Grouping selector */
+
+h3,
+p {
+    margin-bottom: 12px;
+}
+
+h3 {
+    color: #333333;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   6. EVENT CARD
+   Class selector and box model
+   ========================================================= */
+
+.eventCard {
+    border: 2px solid #b9d9f5;
+    border-left: 7px solid #007bff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    outline: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eventCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 86, 179, 0.2);
+}
+
+
+/* =========================================================
+   7. CTA BUTTON
+   Clean syntax and reusable style
+   ========================================================= */
+
+/* Style for main CTA button */
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #004f9f;
+    transform: scale(1.04);
+}
+
+.cta-button:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================================================
+   8. TYPOGRAPHY AND TEXT FORMATTING
+   ========================================================= */
+
+.eventCard p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    text-transform: none;
+    letter-spacing: 0.2px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   9. MULTI-COLUMN NEWS LAYOUT
+   ========================================================= */
+
+.news {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   10. TABLE STYLES
+   Borders, padding, zebra striping
+   ========================================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 18px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #a6b7c8;
+    padding: 14px;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #eaf4ff;
+}
+
+tr:hover {
+    background-color: #d6ebff;
+}
+
+
+/* =========================================================
+   11. SAMPLE FORM STYLES
+   Box model and outline
+   These styles will apply if form fields are added
+   ========================================================= */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #9aa9b7;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(0, 123, 255, 0.28);
+    border-color: #007bff;
+}
+
+
+/* =========================================================
+   12. VISIBILITY EXAMPLES
+   ========================================================= */
+
+.hidden-example {
+    visibility: hidden;
+}
+
+.none-example {
+    display: none;
+}
+
+
+/* =========================================================
+   13. FOOTER STYLES
+   ========================================================= */
+
+footer {
+    background-color: rgba(8, 46, 90, 0.97);
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 35px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   14. RESPONSIVE DESIGN
+   Screens smaller than 768px
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    #mainHeader {
+        padding: 30px 15px;
+    }
+
+    #mainHeader h1 {
+        font-size: 7vw;
+    }
+
+    #mainHeader p {
+        font-size: 3.5vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    section {
+        width: 94%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.45rem;
+    }
+
+    .news {
+        column-count: 1;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: 9px 5px;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   15. VERY SMALL SCREEN DESIGN
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+
+    #mainHeader h1 {
+        font-size: 8vw;
+    }
+
+    section {
+        width: 96%;
+        padding: 16px;
+    }
+
+    table {
+        font-size: 0.75rem;
+    }
+
+    body {
+        background-attachment: scroll;
+    }
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "exercise": 1,
+    "title": "Exercise 01 - User Upcoming Events",
+    "file": "Exercise-01-User-Upcoming-Events.png",
+    "rows": 9
+  },
+  {
+    "exercise": 2,
+    "title": "Exercise 02 - Top Rated Events",
+    "file": "Exercise-02-Top-Rated-Events.png",
+    "rows": 1
+  },
+  {
+    "exercise": 3,
+    "title": "Exercise 03 - Inactive Users",
+    "file": "Exercise-03-Inactive-Users.png",
+    "rows": 0
+  },
+  {
+    "exercise": 4,
+    "title": "Exercise 04 - Peak Session Hours",
+    "file": "Exercise-04-Peak-Session-Hours.png",
+    "rows": 8
+  },
+  {
+    "exercise": 5,
+    "title": "Exercise 05 - Most Active Cities",
+    "file": "Exercise-05-Most-Active-Cities.png",
+    "rows": 5
+  },
+  {
+    "exercise": 6,
+    "title": "Exercise 06 - Event Resource Summary",
+    "file": "Exercise-06-Event-Resource-Summary.png",
+    "rows": 8
+  },
+  {
+    "exercise": 7,
+    "title": "Exercise 07 - Low Feedback Alerts",
+    "file": "Exercise-07-Low-Feedback-Alerts.png",
+    "rows": 2
+  },
+  {
+    "exercise": 8,
+    "title": "Exercise 08 - Sessions per Upcoming Event",
+    "file": "Exercise-08-Sessions-per-Upcoming-Event.png",
+    "rows": 5
+  },
+  {
+    "exercise": 9,
+    "title": "Exercise 09 - Organizer Event Summary",
+    "file": "Exercise-09-Organizer-Event-Summary.png",
+    "rows": 7
+  },
+  {
+    "exercise": 10,
+    "title": "Exercise 10 - Feedback Gap",
+    "file": "Exercise-10-Feedback-Gap.png",
+    "rows": 2
+  },
+  {
+    "exercise": 11,
+    "title": "Exercise 11 - Daily New User Count",
+    "file": "Exercise-11-Daily-New-User-Count.png",
+    "rows": 3
+  },
+  {
+    "exercise": 12,
+    "title": "Exercise 12 - Event with Maximum Sessions",
+    "file": "Exercise-12-Event-with-Maximum-Sessions.png",
+    "rows": 3
+  },
+  {
+    "exercise": 13,
+    "title": "Exercise 13 - Average Rating per City",
+    "file": "Exercise-13-Average-Rating-per-City.png",
+    "rows": 3
+  },
+  {
+    "exercise": 14,
+    "title": "Exercise 14 - Most Registered Events",
+    "file": "Exercise-14-Most-Registered-Events.png",
+    "rows": 3
+  },
+  {
+    "exercise": 15,
+    "title": "Exercise 15 - Event Session Time Conflict",
+    "file": "Exercise-15-Event-Session-Time-Conflict.png",
+    "rows": 1
+  },
+  {
+    "exercise": 16,
+    "title": "Exercise 16 - Unregistered Active Users",
+    "file": "Exercise-16-Unregistered-Active-Users.png",
+    "rows": 0
+  },
+  {
+    "exercise": 17,
+    "title": "Exercise 17 - Multi-Session Speakers",
+    "file": "Exercise-17-Multi-Session-Speakers.png",
+    "rows": 3
+  },
+  {
+    "exercise": 18,
+    "title": "Exercise 18 - Resource Availability Check",
+    "file": "Exercise-18-Resource-Availability-Check.png",
+    "rows": 4
+  },
+  {
+    "exercise": 19,
+    "title": "Exercise 19 - Completed Events Feedback Summary",
+    "file": "Exercise-19-Completed-Events-Feedback-Summary.png",
+    "rows": 2
+  },
+  {
+    "exercise": 20,
+    "title": "Exercise 20 - User Engagement Index",
+    "file": "Exercise-20-User-Engagement-Index.png",
+    "rows": 10
+  },
+  {
+    "exercise": 21,
+    "title": "Exercise 21 - Top Feedback Providers",
+    "file": "Exercise-21-Top-Feedback-Providers.png",
+    "rows": 5
+  },
+  {
+    "exercise": 22,
+    "title": "Exercise 22 - Duplicate Registrations Check",
+    "file": "Exercise-22-Duplicate-Registrations-Check.png",
+    "rows": 1
+  },
+  {
+    "exercise": 23,
+    "title": "Exercise 23 - Registration Trends",
+    "file": "Exercise-23-Registration-Trends.png",
+    "rows": 3
+  },
+  {
+    "exercise": 24,
+    "title": "Exercise 24 - Average Session Duration per Event",
+    "file": "Exercise-24-Average-Session-Duration-per-Event.png",
+    "rows": 6
+  },
+  {
+    "exercise": 25,
+    "title": "Exercise 25 - Events Without Sessions",
+    "file": "Exercise-25-Events-Without-Sessions.png",
+    "rows": 2
+  }
+]
